@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDA6DB28-0369-4704-A9E2-C9CA4B26A71D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameStart.jpg" />
+    <None Include="Resources\back2.jpg" />
+    <None Include="Resources\Main_Title.gif" />
+    <None Include="Resources\69.jpg" />
+    <None Include="Resources\balloon7.png" />
+    <None Include="Resources\pinkBalloon.gif" />
+    <None Include="Resources\redStar.gif" />
+    <None Include="Resources\Back1.jpg" />
+    <None Include="Resources\balloon3.png" />
+    <None Include="Resources\balloon5.png" />
+    <None Include="Resources\balloon4.png" />
+    <None Include="Resources\balloon2.png" />
+    <None Include="Resources\background-Image.jpg" />
+    <None Include="Resources\balloon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closecross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-multiply-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-multiply-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchronize-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-synchronize-128%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-confetti-96%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln15.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bln18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backform2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backform21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backform23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bomb-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1001.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
